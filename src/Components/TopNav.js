@@ -1,33 +1,43 @@
 import React from "react";
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
 
 function TopNav() {
   return (
     // Update the container CSS
     <TopNavContainer>
       {/* Update the nav link style */}
-        <Nav>
-            <NavLink style={({ isActive }) => ({color: isActive ? '#000' : '#edd698',background: isActive ? '#FFFF00' : '#0003'})} to="/">Home</NavLink>
-            <NavLink style={({ isActive }) => ({color: isActive ? '#000' : '#edd698',background: isActive ? '#FFFF00' : '#0003'})} to="/projects">Projects</NavLink>
-            <NavLink style={({ isActive }) => ({color: isActive ? '#000' : '#edd698',background: isActive ? '#FFFF00' : '#0003'})} to="/topics">What I am working on</NavLink>
-        </Nav>
+      <NavItems>
+        <NavItem href="/">Home</NavItem>
+        <NavItem href="/topics">What I am working on</NavItem>
+      </NavItems>
     </TopNavContainer>
-    )
+  )
 }
 
 // These will be updated
 const TopNavContainer = styled.div`
   display: flex;
+  justify-content: flex-end;
   list-style-type: none;
-  margin: 0;
-  padding: calc(var(--20px) - 10px);
-  border-radius: 50px;
-  transition: all .2s linear;
+  padding: 5px;
   font-size: 24px;
   font-family: Copperplate,Copperplate Gothic Light,fantasy; 
+  background-color: #3485ebcf;
 `
-const Nav = styled.nav`
+const NavItems = styled.ul`
+margin: 1px;
+display:flex;
+list-style-type: none;
+text-decoration: none;
+flex-direction: row;
+`
+const NavItem = styled.a`
+  font-size: 27px;
+  margin: 5px 30px 5px 10px;
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 
 `
 
