@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+// import TopNav from '../Components/TopNav';
 
 export default function CurrentTopics() {
 
     return (
     <ProjectsContainer> 
         <TitleContainer>
-            <h1>GloomHaven Initiative Tracker</h1>
+            <h1>Yo... Dis is what I am working on!! Crunk Snooooogiens!!!</h1>
         </TitleContainer>
  
         <PageSelectContainer>

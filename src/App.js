@@ -5,19 +5,19 @@ import styled from 'styled-components';
 
 //components & pa imports
 import TopNav from './Components/TopNav.js';
-import Home from './Pages/HomePage.js';
-import CurrentTopics from './Pages/CurrentTopics.js';
+import HomePage from './Pages/HomePage.js';
+import CurrentTopicsPage from './Pages/CurrentTopics.js';
 
 //TopNav is rendered on every page and then we go into the Routes. 
 class App extends Component {
   render() {
     return (
       <AppContainer>
+        <TopNav />
         <BrowserRouter>
-          <TopNav />
           <Routes>
-            <Route path='/' element={Home} />
-            <Route path='/topics' element={CurrentTopics} />
+            <Route path='/' element={<HomePage/>} />
+            <Route path='/topics' element={<CurrentTopicsPage/>} />
           </Routes>
         </BrowserRouter>
       </AppContainer>
