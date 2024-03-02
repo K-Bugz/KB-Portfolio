@@ -14,11 +14,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-
+width: 110px;
 `
 
 const SkillName = styled.h2`
-margin: 0px 9px;`
+margin: 0px 9px;
+font-size: 1.21em;`
 
 const SkillImg = styled.img``
 
