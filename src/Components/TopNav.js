@@ -18,15 +18,16 @@ function TopNav() {
   )
 }
 
-// These will be updated
+// These will be updated 
+// background-color: #3485ebcf;  background-color: #573f74;
 const TopNavContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
   padding: 0px 5px 0px 5px;
   font-size: 24px;
-  font-family: Copperplate,Copperplate Gothic Light,fantasy; 
-  background-color: #3485ebcf;`
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
+  background: linear-gradient(to right, #100024, #573F74);`
 
 const NavItems = styled.ul`
 margin: 1px;

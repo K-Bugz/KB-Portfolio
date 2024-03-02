@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function Skills(props) {
   return (
-    <SkillsContainer>
+    <SkillsContainer onClick={props.link}>
         <SkillName>{props.name}</SkillName>
         <SkillImg src={props.img} height='50px' width='50px' alt = {props.name}></SkillImg>
     </SkillsContainer>

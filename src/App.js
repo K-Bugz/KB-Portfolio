@@ -26,5 +26,6 @@ class App extends Component {
 }
 const AppContainer = styled.div`
   background-color: #e9e4e4;
+  marigin: 10px;
 `
 export default App;
