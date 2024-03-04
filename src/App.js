@@ -6,7 +6,7 @@ import styled from 'styled-components';
 //components & pa imports
 import TopNav from './Components/TopNav.js';
 import HomePage from './Pages/HomePage.js';
-import CurrentTopicsPage from './Pages/CurrentTopics.js';
+import CurrentTopicsPage from './Pages/CurrentTopicsPage.js';
 
 //TopNav is rendered on every page and then we go into the Routes. 
 class App extends Component {

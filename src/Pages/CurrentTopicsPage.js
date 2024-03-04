@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 // import TopNav from '../Components/TopNav';
 
-export default function CurrentTopics() {
-
+export default function CurrentTopicsPage() {
+        
     return (
     <ProjectsContainer> 
         <TitleContainer>
