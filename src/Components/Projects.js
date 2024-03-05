@@ -45,8 +45,8 @@ border-radius: 20px;
 `
 
 const ProjectName = styled.h2`
-font-size: 2.5em;
-margin: -13px;
+font-size: 1.7em;
+margin: -4px;
 color: #100024;`
 
 const ProjectImg = styled.img`
